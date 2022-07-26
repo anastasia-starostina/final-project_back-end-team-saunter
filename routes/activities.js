@@ -13,8 +13,8 @@ const router = express.Router();
 router.get("/q", async (req, res, next) => {
   //How to have two .get/ without conflict?
   // ;lessons/q?title= 
-  const topic = req.query.topic;
-  console.log("this is topic ", topic);
+  const budget = req.query.budget;
+  console.log("this is topic ", budget);
   const results = await selectLessonsByTopic(topic);
   res.json({ success: true, payload: results });
 });

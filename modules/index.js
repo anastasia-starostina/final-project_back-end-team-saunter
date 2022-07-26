@@ -22,8 +22,9 @@ export const postLessons = async function postLessons(name, topic, description, 
        );
 }
 
-export const selectLessonsByTopic = async function (topic) {
+export const selectLessonsByTopic = async function (topic, budget, energy_level) {
   const results = await pool.query(
+    
     `SELECT * FROM lessons WHERE topic LIKE '%${topic}%';`
   );
   return results.rows;
