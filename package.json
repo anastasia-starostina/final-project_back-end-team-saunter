@@ -2,6 +2,7 @@
   "type": "module",
 
   "scripts": {
+    "dbpopulate": "node -r dotenv/config ./db/scripts/populateTable.js",
     "dbcreate": "node -r dotenv/config ./db/scripts/createTable.js",
     "start": "node -r dotenv/config ./bin/www.js",
     "dev": "nodemon -r dotenv/config ./bin/www.js"

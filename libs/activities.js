@@ -1,4 +1,4 @@
-const test = [
+const activities = [
     {
       name: "L'Osterie",
       budget: 3,
@@ -25,4 +25,4 @@ const test = [
     },
   ];
 
-export default test;
+export default activities;
