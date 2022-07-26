@@ -13,8 +13,8 @@ export const pool = new pg.Pool({
 
 //Make a function that takes in an SQL string and runs pool.query using that string
 //Export query function
-export function poolQuery(string) {
-  return pool.query(string);
+export function poolQuery (text, params, callback) {
+  return pool.query(text, params, callback);
 }
 //Testing that the pool query works and what it gives back.
 async function log() {
