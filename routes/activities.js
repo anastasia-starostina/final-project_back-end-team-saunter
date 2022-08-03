@@ -13,6 +13,8 @@ import {
     getNotDogFriendly
 } from '../models/activities.js';
 
+// hello
+
 const router = express.Router();
 
 router.get("/low-budget", async (req, res) => {
