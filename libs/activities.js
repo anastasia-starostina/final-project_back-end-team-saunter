@@ -1,4 +1,5 @@
 const activities = [
+
     {
       name: "L'Osterie",
       budget: 3,
@@ -30,6 +31,6 @@ const activities = [
       energy_level: 3,
       dog_friendly: true,
       image: "https://via.placeholder.com/600/FF8F77",
-    },
+    }
   ];
 export default activities;
